@@ -10,23 +10,23 @@ set -x
 # 1. Create 5 directories named dir1, dir2, dir3, dir4, and dir5
 mkdir -p dir1 dir2 dir3 dir4 dir5
 
-# 2. List the contents of the parent directory to verify the presence of the 5 directories
+# 2. List the contents of the current working directory to verify the presence of the 5 directories
 ls -a
 
-# 3. Create 5 text files in dir2 named file1, file2, file3, file4, and file5
+# 3. Create 5 text files in dir2 named file1.txt, file2.txt, file3.txt, file4.txt, and file5.txt
 touch dir2/file{1..5}.txt
 
-# 4. Append the words "Hello world" to dir2/file3
+# 4. Append the words "Hello world" to dir2/file3.txt
 echo "Hello world" >> dir2/file3.txt
 
-# 5. Verify that file3 contains the words "Hello world" by printing the contents of the file in the terminal
+# 5. Verify that file3.txt contains the words "hello world" by printing the contents of the file in the terminal
 cat dir2/file3.txt
 
-# 6. Delete file4
+# 6. Delete file4.txt
 rm dir2/file4.txt
 
 # 7. Delete directories dir4 and dir5 including all their contents (if any)
 rm -rf dir4 dir5
 
-# 8. List the contents of the parent directory to verify the deletion of dir4 and dir5
+# 8. List the contents of the current working directory to verify the deletion of dir4 and dir5
 ls -a
